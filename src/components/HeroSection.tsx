@@ -7,6 +7,7 @@ import { TextEffect } from '@/components/ui/text-effect'
 import { AnimatedGroup } from '@/components/ui/animated-group'
 import Header from '@/components/Header'
 import { Button } from './ui/button'
+import LogoCarousel from './LogoCarousel'
 
 const HeroSection = () => {
   return (
@@ -41,8 +42,7 @@ const HeroSection = () => {
                                 as="p"
                                 className="mt-8 max-w-2xl text-pretty text-lg"
                             >
-                                Affordable, flexible, and ready when you are.
-                                From quick errands to long road trips — we’ve got your ride.
+                                 {"Affordable, flexible, and ready when you are.\n From quick errands to long road trips we’ve got your ride."}
                             </TextEffect>
                             <AnimatedGroup
                                 variants={{
@@ -75,12 +75,12 @@ const HeroSection = () => {
                                 className="mt-12 flex items-center gap-2">
                             <div
                                 key={1}
-                                className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5"
+                                className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] p-0.5"
                             >
                                  <Button
                                     asChild
                                     size="lg"
-                                    className="rounded-xl px-5 text-base">
+                                    className="rounded-xl px-5 text-base rounded-lg shadow-lg hover:shadow-red-800 hover:scale-105 transition cursor-pointer">
                                     <Link href="#link">
                                        < span className="text-nowrap">Book a Ride</span>
                                     </Link>
@@ -90,9 +90,9 @@ const HeroSection = () => {
                                     key={2}
                                     asChild
                                     size="lg"
-                                    className="rounded-xl px-5 text-base"
+                                    className="rounded-xl px-5 text-base rounded-lg shadow-lg hover:shadow-red-800 hover:scale-105 transition cursor-pointer"
                                     variant="ghost">
-                                    <Link href="#link">
+                                    <Link href="#link" >
                                         <span className="text-nowrap">Browse Cars</span>
                                     </Link>
                                 </Button>  
@@ -132,9 +132,9 @@ const HeroSection = () => {
                         <div className="relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20"> 
                           <div aria-hidden className="bg-linear-to-b to-background absolute inset-0 z-10 from-transparent from-35%"/>
 
-                          <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-5xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
+                          <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-5xl overflow-hidden rounded-2xl border p-2 shadow-lg shadow-zinc-950/15 ring-1">
                             <Image
-                             className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
+                             className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block "
                              src="/image/unsplash.jpg"
                              alt="app screen"
                              width="2700"
@@ -151,8 +151,9 @@ const HeroSection = () => {
                      </AnimatedGroup>      
                 </div>
             </section>
+           
         </main>
-
+        <LogoCarousel  />            
     </>
   )
 }
