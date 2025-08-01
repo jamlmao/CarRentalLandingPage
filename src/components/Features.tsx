@@ -27,7 +27,7 @@ const Features = () => {
                         </h3>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-sm">From fuel-efficient compacts to spacious SUVs  RentN'Go offers vehicles for every trip, need, and budget.</p>
+                        <p className="text-sm">From fuel-efficient compacts to spacious SUVs  RentN&apos;Go offers vehicles for every trip, need, and budget.</p>
                     </CardContent>
                 </Card>
 

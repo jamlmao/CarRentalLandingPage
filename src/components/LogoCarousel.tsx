@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { InfiniteSlider } from './ui/infinite-slider'
 import { ProgressiveBlur } from './ui/progressive-blur'
 
@@ -21,67 +22,67 @@ const LogoCarousel = () => {
                       speed={40}
                       gap={112}>
                       <div className="flex">
-                          <img
+                          <Image
                               className="mx-auto h-20 w-fit dark:invert"
                               src="/logos/bmw.webp"
-                              alt="Nvidia Logo"
-                              height="60"
-                              width="auto"
+                              alt="BMW Logo"
+                              height={60}
+                              width={120}
                           />
                       </div>
 
                       <div className="flex">
-                          <img
+                          <Image
                               className="mx-auto h-20 w-fit dark:invert"
                               src="/logos/ferrari.png"
-                              alt="Column Logo"
-                              height="60"
-                              width="auto"
+                              alt="Ferrari Logo"
+                              height={60}
+                              width={120}
                           />
                       </div>
                       <div className="flex">
-                          <img
+                          <Image
                               className="mx-auto h-20 w-fit dark:invert"
                               src="/logos/mercedes.png"
-                              alt="GitHub Logo"
-                              height="60"
-                              width="auto"
+                              alt="Mercedes Logo"
+                              height={60}
+                              width={120}
                           />
                       </div>
                       <div className="flex">
-                          <img
+                          <Image
                               className="mx-auto h-20 w-fit dark:invert"
                               src="/logos/Porsche.png"
-                              alt="Nike Logo"
-                              height="60"
-                              width="auto"
+                              alt="Porsche Logo"
+                              height={60}
+                              width={120}
                           />
                       </div>
                       <div className="flex">
-                          <img
+                          <Image
                               className="mx-auto h-20 w-fit dark:invert"
                               src="/logos/mclaren.png"
-                              alt="Lemon Squeezy Logo"
-                              height="60"
-                              width="auto"
+                              alt="McLaren Logo"
+                              height={60}
+                              width={120}
                           />
                       </div>
                       <div className="flex">
-                          <img
+                          <Image
                               className="mx-auto h-20 w-fit dark:invert"
                               src="/logos/honda.webp"
-                              alt="Laravel Logo"
-                              height="60"
-                              width="auto"
+                              alt="Honda Logo"
+                              height={60}
+                              width={120}
                           />
                       </div>
                       <div className="flex">
-                          <img
+                          <Image
                               className="mx-auto h-20 w-fit dark:invert"
                               src="/logos/ford.webp"
-                              alt="Lilly Logo"
-                              height="60"
-                              width="auto"
+                              alt="Ford Logo"
+                              height={60}
+                              width={120}
                           />
                       </div>
                   </InfiniteSlider>
